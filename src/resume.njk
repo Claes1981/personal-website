@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: Resume
+permalink: /resume/
+---
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <p class="subtitle">{{ site.description }}</p>
+  <nav class="social-links">
+    <a href="/">Home</a>
+    {% if social.github %}
+    <a href="{{ social.github }}" target="_blank" rel="noopener">GitHub</a>
+    {% endif %}
+    {% if social.linkedin %}
+    <a href="{{ social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    {% endif %}
+    {% if social.email %}
+    <a href="mailto:{{ social.email }}">Email</a>
+    {% endif %}
+  </nav>
+</header>
+
+<main class="main-content">
+  <section class="resume-section">
+    <h2>Experience</h2>
+    <div class="resume-section">
+      <h3>Cloud Developer Student</h3>
+      <p class="date">2024 - Present</p>
+      <p>Studying cloud computing, distributed systems, and modern web development.</p>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2>Education</h2>
+    <div class="resume-section">
+      <h3>Cloud Development Program</h3>
+      <p class="date">Expected 2025</p>
+      <p>Focusing on cloud architecture, DevOps practices, and scalable applications.</p>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript / Node.js</li>
+      <li>Cloud platforms (AWS, Azure, GCP)</li>
+      <li>Containerization (Docker, Kubernetes)</li>
+      <li>CI/CD pipelines</li>
+      <li>Git version control</li>
+    </ul>
+  </section>
+
+  <section class="resume-section">
+    <h2>Projects</h2>
+    <div class="resume-section">
+      <h3>Personal Website</h3>
+      <p class="date">2024</p>
+      <p>Static site built with Eleventy and Nunjucks templates.</p>
+    </div>
+  </section>
+</main>

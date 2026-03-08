@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Home
+permalink: /
+---
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <p class="subtitle">{{ site.description }}</p>
+  
+  <nav class="social-links">
+    {% if social.github %}
+    <a href="{{ social.github }}" target="_blank" rel="noopener">GitHub</a>
+    {% endif %}
+    {% if social.linkedin %}
+    <a href="{{ social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    {% endif %}
+    {% if social.email %}
+    <a href="mailto:{{ social.email }}">Email</a>
+    {% endif %}
+    <a href="/resume/">Resume</a>
+  </nav>
+</header>
+
+<main class="main-content">
+  <section>
+    <h2>About</h2>
+    <p>Passionate cloud developer student building modern applications and learning distributed systems.</p>
+  </section>
+</main>
