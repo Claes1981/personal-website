@@ -1,7 +1,8 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "Personal website for Claes Fransson",
   "main": "index.js",
   "scripts": {
     "build": "eleventy", 
