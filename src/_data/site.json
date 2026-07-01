@@ -2,11 +2,11 @@
   "site": {
     "title": "Claes Fransson",
     "description": "Cloud Developer Student",
-    "url": "https://claesfransson.com"
+    "url": "https://claesf.se"
   },
   "social": {
-    "github": "",
-    "linkedin": "",
-    "email": ""
+    "github": "https://github.com/Claes1981",
+    "linkedin": "https://www.linkedin.com/in/claesfransson/",
+    "email": "claes.v.fransson@gmail.com"
   }
 }
