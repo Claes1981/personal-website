@@ -26,14 +26,14 @@ permalink: /
   </section>
 
   <nav class="social-links">
-    {% if social.github %}
-    <a href="{{ social.github }}" target="_blank" rel="noopener">GitHub</a>
+{% if site.social.github %}
+    <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
     {% endif %}
-    {% if social.linkedin %}
-    <a href="{{ social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    {% if site.social.linkedin %}
+    <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
     {% endif %}
-    {% if social.email %}
-    <a href="mailto:{{ social.email }}">Email</a>
+    {% if site.social.email %}
+    <a href="mailto:{{ site.social.email }}">Email</a>
     {% endif %}
   </nav>
 </main>

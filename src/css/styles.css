@@ -119,6 +119,20 @@ h1 {
 	color: white;
 }
 
+.hero .social-links {
+	border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero .social-links a {
+	color: white;
+	border-color: rgba(255, 255, 255, 0.6);
+}
+
+.hero .social-links a:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+	border-color: white;
+}
+
 h2 {
 	color: #2c3e50;
 	border-bottom: 2px solid #3498db;
