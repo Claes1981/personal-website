@@ -1,9 +1,7 @@
 {
-  "site": {
-    "title": "Claes Fransson",
-    "description": "Cloud Developer Student",
-    "url": "https://claesf.se"
-  },
+  "title": "Claes Fransson",
+  "description": "Cloud Developer Student",
+  "url": "https://claesf.se",
   "social": {
     "github": "https://github.com/Claes1981",
     "linkedin": "https://www.linkedin.com/in/claesfransson/",

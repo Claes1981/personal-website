@@ -1,121 +1,177 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+		sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f5f5f5;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
-header {
-  text-align: center;
-  padding: 3rem 0;
+.hero {
+	text-align: center;
+	padding: 3rem 2rem;
+	background: linear-gradient(135deg, #2c3e50, #3498db);
+	color: white;
+	border-radius: 8px;
+	margin-bottom: 2rem;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+	color: white;
 }
 
-.subtitle {
-  font-size: 1.25rem;
-  color: #7f8c8d;
-  margin-bottom: 2rem;
+.tagline {
+	font-size: 1.25rem;
+	color: rgba(255, 255, 255, 0.85);
+	margin-bottom: 1rem;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.social-links a {
-  color: #3498db;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid #3498db;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  background-color: #3498db;
-  color: white;
+.intro {
+	max-width: 540px;
+	margin: 0 auto;
+	color: rgba(255, 255, 255, 0.9);
+	line-height: 1.7;
 }
 
 .main-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
+	background: white;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-top: 2rem;
 }
 
-section {
-  margin-bottom: 2rem;
+.nav-section {
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+	border-radius: 6px;
+	background: #f8f9fa;
+}
+
+.nav-section:last-of-type {
+	margin-bottom: 0;
+}
+
+.nav-section p {
+	color: #555;
+	margin-bottom: 1rem;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-links li a {
+	display: inline-block;
+	color: #3498db;
+	text-decoration: none;
+	padding: 0.4rem 0;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.2s ease;
+}
+
+.nav-links li a:hover {
+	border-bottom-color: #3498db;
+}
+
+.coming-soon {
+	color: #aaa;
+	font-style: italic;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 1px solid #e0e0e0;
+}
+
+.social-links a {
+	color: #3498db;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid #3498db;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+	background-color: #3498db;
+	color: white;
 }
 
 h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+	color: #2c3e50;
+	border-bottom: 2px solid #3498db;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .resume-section {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .resume-section h3 {
-  color: #34495e;
-  margin-bottom: 0.5rem;
+	color: #34495e;
+	margin-bottom: 0.5rem;
 }
 
 .resume-section .date {
-  color: #7f8c8d;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+	color: #7f8c8d;
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
 }
 
-.resume-section p, .resume-section ul {
-  margin-left: 1rem;
+.resume-section p,
+.resume-section ul {
+	margin-left: 1rem;
 }
 
 .resume-section ul {
-  list-style-type: disc;
+	list-style-type: disc;
 }
 
 footer {
-  text-align: center;
-  padding: 2rem;
-  color: #7f8c8d;
-  font-size: 0.9rem;
+	text-align: center;
+	padding: 2rem;
+	color: #7f8c8d;
+	font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  .social-links {
-    flex-direction: column;
-    align-items: center;
-  }
+	.container {
+		padding: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.hero {
+		padding: 2rem 0 1.5rem;
+	}
+
+	.social-links {
+		flex-direction: column;
+		align-items: center;
+	}
 }
