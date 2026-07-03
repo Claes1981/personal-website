@@ -95,6 +95,15 @@ h1 {
 	font-style: italic;
 }
 
+.internship-notice {
+	background: #e8f4fd;
+	border-left: 4px solid #3498db;
+	padding: 0.75rem 1rem;
+	margin-bottom: 1rem;
+	border-radius: 0 4px 4px 0;
+	color: #2c3e50;
+}
+
 .social-links {
 	display: flex;
 	justify-content: center;
@@ -147,6 +156,12 @@ h2 {
 .resume-section h3 {
 	color: #34495e;
 	margin-bottom: 0.5rem;
+}
+
+.resume-section h3 a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: #3498db;
 }
 
 .resume-section .date {
