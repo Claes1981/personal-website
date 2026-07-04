@@ -158,6 +158,44 @@ h2 {
 	margin-bottom: 0.5rem;
 }
 
+.course-projects {
+	margin-top: 1rem;
+	padding-left: 0.5rem;
+	border-left: 3px solid #e0e0e0;
+}
+
+.course-projects h5 {
+	color: #7f8c8d;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.5rem;
+}
+
+.course-projects .project {
+	margin-bottom: 0.75rem;
+}
+
+.course-projects .project h6 {
+	margin-bottom: 0.2rem;
+	font-size: 0.95rem;
+}
+
+.course-projects .project h6 a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+.course-projects .project h6 a:hover {
+	text-decoration: underline;
+}
+
+.course-projects .project p {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #555;
+}
+
 .resume-section h3 a {
 	color: inherit;
 	text-decoration: underline;
