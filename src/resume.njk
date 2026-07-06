@@ -9,15 +9,7 @@ permalink: /resume/
   <p class="tagline">{{ site.description }}</p>
   <nav class="social-links">
     <a href="/">Home</a>
-{% if site.social.github %}
-    <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
-    {% endif %}
-    {% if site.social.linkedin %}
-    <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-    {% endif %}
-    {% if site.social.email %}
-    <a href="mailto:{{ site.social.email }}">Email</a>
-    {% endif %}
+    {% include 'partials/social-links.njk' %}
   </nav>
 </header>
 
@@ -35,7 +27,7 @@ permalink: /resume/
       <p class="institution">Campus Mölndal</p>
       <p class="date">2025 - Present</p>
       <p>Higher Vocational Education (Yrkeshögskola) in Cloud Development</p>
-      
+
       <h4>Completed Courses (selection):</h4>
       <div class="course-list">
         <div class="course">
@@ -48,58 +40,58 @@ permalink: /resume/
             <li>Logging, monitoring, and troubleshooting in cloud environments</li>
             <li>Secrets and identity management in complex environments</li>
             <li>Scalability preparation and application lifecycle management</li>
-              </ul>
-              
-              <div class="course-projects">
-                <h5>Projects</h5>
-                <div class="project">
-                  <h6><a href="https://github.com/Claes1981/moln_fordj_inlamningsuppgifter" target="_blank" rel="noopener">CloudSoft — Job Posting Platform</a></h6>
-                  <p>Full-stack job application platform with user authentication, resume uploads, and job management. Azure Cosmos DB and Blob Storage for data persistence, Docker containerization, Azure Bicep IaC provisioning, and GitHub Actions CI/CD pipeline.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="course">
-              <h5>Grundläggande Molnapplikationer (Fundamental Cloud Applications)</h5>
-              <p class="credits">50 credits</p>
-              <ul>
-                <li>Cloud application fundamentals and Azure deployment</li>
-                <li>Infrastructure provisioning and automated deployments</li>
-              </ul>
-              
-              <div class="course-projects">
-                <h5>Projects</h5>
-                <div class="project">
-                  <h6><a href="https://github.com/Claes1981/inlamningsuppgift2" target="_blank" rel="noopener">TodoApp — Clean Architecture Todo Service</a></h6>
-                  <p>Todo application built with Clean Architecture (Domain/Application/Infrastructure/Presentation layers). MongoDB data layer, Nginx reverse proxy, Azure Bastion host for secure access, Bicep + cloud-init provisioning. Full unit and infrastructure test suite.</p>
-                </div>
-                <div class="project">
-                  <h6><a href="https://github.com/Claes1981/inlamningsuppgift_1" target="_blank" rel="noopener">Cloud Deployment — ASP.NET Core on Azure VM</a></h6>
-                  <p>First cloud deployment project. ASP.NET Core MVC application deployed to Azure Ubuntu VM with automated provisioning scripts, .NET runtime setup, and systemd service management.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="course">
-              <h5>Test och kvalitetssäkring (Testing and Quality Assurance)</h5>
-              <p class="credits">30 credits</p>
-              <ul>
-                <li>Test-Driven Development (TDD) methodology</li>
-                <li>Clean Code principles and code quality tools</li>
-                <li>Unit testing frameworks and test planning</li>
-                <li>Agile methods: SCRUM, User Cases, User Stories, and Gherkin</li>
-                <li>Code complexity analysis and design patterns</li>
-              </ul>
-              
-              <div class="course-projects">
-                <h5>Projects</h5>
-                <div class="project">
-                  <h6><a href="https://github.com/Campus-Molndal-CLO25/assignment-tdd-grupp2" target="_blank" rel="noopener">TodoApi — TDD Web API (Group Project)</a></h6>
-                  <p>ASP.NET Core Web API developed entirely with Test-Driven Development. Clean layered architecture (Core/Api.Tests), comprehensive unit test coverage, and GitHub Actions CI pipeline. Group collaboration using feature branch workflow.</p>
+          </ul>
+
+          <div class="course-projects">
+            <h5>Projects</h5>
+            <div class="project">
+              <h6><a href="https://github.com/Claes1981/moln_fordj_inlamningsuppgifter" target="_blank" rel="noopener">CloudSoft — Job Posting Platform</a></h6>
+              <p>Full-stack job application platform with user authentication, resume uploads, and job management. Azure Cosmos DB and Blob Storage for data persistence, Docker containerization, Azure Bicep IaC provisioning, and GitHub Actions CI/CD pipeline.</p>
             </div>
           </div>
+        </div>
+
+        <div class="course">
+          <h5>Grundläggande Molnapplikationer (Fundamental Cloud Applications)</h5>
+          <p class="credits">50 credits</p>
+          <ul>
+            <li>Cloud application fundamentals and Azure deployment</li>
+            <li>Infrastructure provisioning and automated deployments</li>
+          </ul>
+
+          <div class="course-projects">
+            <h5>Projects</h5>
+            <div class="project">
+              <h6><a href="https://github.com/Claes1981/inlamningsuppgift2" target="_blank" rel="noopener">TodoApp — Clean Architecture Todo Service</a></h6>
+              <p>Todo application built with Clean Architecture (Domain/Application/Infrastructure/Presentation layers). MongoDB data layer, Nginx reverse proxy, Azure Bastion host for secure access, Bicep + cloud-init provisioning. Full unit and infrastructure test suite.</p>
             </div>
-            
+            <div class="project">
+              <h6><a href="https://github.com/Claes1981/inlamningsuppgift_1" target="_blank" rel="noopener">Cloud Deployment — ASP.NET Core on Azure VM</a></h6>
+              <p>First cloud deployment project. ASP.NET Core MVC application deployed to Azure Ubuntu VM with automated provisioning scripts, .NET runtime setup, and systemd service management.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="course">
+          <h5>Test och kvalitetssäkring (Testing and Quality Assurance)</h5>
+          <p class="credits">30 credits</p>
+          <ul>
+            <li>Test-Driven Development (TDD) methodology</li>
+            <li>Clean Code principles and code quality tools</li>
+            <li>Unit testing frameworks and test planning</li>
+            <li>Agile methods: SCRUM, User Cases, User Stories, and Gherkin</li>
+            <li>Code complexity analysis and design patterns</li>
+          </ul>
+
+          <div class="course-projects">
+            <h5>Projects</h5>
+            <div class="project">
+              <h6><a href="https://github.com/Campus-Molndal-CLO25/assignment-tdd-grupp2" target="_blank" rel="noopener">TodoApi — TDD Web API (Group Project)</a></h6>
+              <p>ASP.NET Core Web API developed entirely with Test-Driven Development. Clean layered architecture (Core/Api.Tests), comprehensive unit test coverage, and GitHub Actions CI pipeline. Group collaboration using feature branch workflow.</p>
+            </div>
+          </div>
+        </div>
+
         <div class="course">
           <h5>Fördjupad objektorienterad programmering i C# (Advanced OOP in C#)</h5>
           <p class="credits">25 credits</p>
@@ -112,7 +104,7 @@ permalink: /resume/
             <li>Agile methods: Kanban</li>
           </ul>
         </div>
-        
+
         <div class="course">
           <h5>Konsultmässighet och kommunikation (Consulting and Communication)</h5>
           <p class="credits">10 credits</p>
@@ -135,7 +127,7 @@ permalink: /resume/
       <p class="institution">Various Chess Tournaments</p>
       <p class="date">2014 - Present (10+ years, part-time)</p>
       <p>Technical specialist for international chess tournaments, responsible for live streaming infrastructure and electronic chess equipment. Approximately 10 assignments per year (weekends and one-week events).</p>
-      
+
       <h4>Key Responsibilities:</h4>
       <ul>
         <li>Produced live video streams to YouTube and Twitch featuring chess commentators and player footage</li>
@@ -144,7 +136,7 @@ permalink: /resume/
         <li>Troubleshot technical issues during live events under time pressure</li>
         <li>Coordinated with tournament organizers and commentators on technical requirements</li>
       </ul>
-      
+
       <h4>Technologies:</h4>
       <ul>
         <li>YouTube Live & Twitch streaming platforms</li>
@@ -168,7 +160,7 @@ permalink: /resume/
           <li>Logging & monitoring</li>
         </ul>
       </div>
-      
+
       <div class="skill-category">
         <h4>Programming</h4>
         <ul>
@@ -178,7 +170,7 @@ permalink: /resume/
           <li>Design patterns</li>
         </ul>
       </div>
-      
+
       <div class="skill-category">
         <h4>Testing & Quality</h4>
         <ul>
@@ -189,7 +181,7 @@ permalink: /resume/
           <li>Agile methodologies (SCRUM, Kanban)</li>
         </ul>
       </div>
-      
+
       <div class="skill-category">
         <h4>Tools & Platforms</h4>
         <ul>
@@ -214,7 +206,7 @@ permalink: /resume/
       <p>Custom static site generator built with Bash and jq for rendering chess club competition broadcast pages. JSON-driven template engine with live update support, multi-competition builds, and reusable partial templates. No external dependencies beyond core Unix tools.</p>
     </div>
   </section>
-    
+
   <section class="resume-section">
     <h2>Languages</h2>
     <ul>

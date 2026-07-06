@@ -8,7 +8,7 @@ permalink: /
   <h1>{{ site.title }}</h1>
   <p class="tagline">{{ site.description }}</p>
 </header>
-    
+
 <main class="main-content">
   <section class="nav-section">
     <h2>Professional</h2>
@@ -16,21 +16,13 @@ permalink: /
       <li><a href="/resume/">Resume</a></li>
     </ul>
   </section>
-    
+
   <section class="nav-section">
     <h2>Personal</h2>
     <p class="coming-soon">Coming soon</p>
   </section>
-    
+
   <nav class="social-links">
-{% if site.social.github %}
-    <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
-    {% endif %}
-    {% if site.social.linkedin %}
-    <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-    {% endif %}
-    {% if site.social.email %}
-    <a href="mailto:{{ site.social.email }}">Email</a>
-    {% endif %}
+    {% include 'partials/social-links.njk' %}
   </nav>
 </main>
