@@ -1,6 +1,6 @@
 # AGENTS.md — Personal Website
 
-**Generated:** 2026-06-30
+**Generated:** 2026-07-05
 
 ## OVERVIEW
 
@@ -16,8 +16,10 @@ Stack: Eleventy 3.1.2, Nunjucks templates, CSS (no JS), ES Modules
 │   ├── _data/
 │   │   └── site.json   # Site metadata + social links
 │   ├── _includes/
-│   │   └── layouts/
-│   │       └── base.njk   # Base HTML layout
+│   │   ├── layouts/
+│   │   │   └── base.njk   # Base HTML layout
+│   │   └── partials/
+│   │       └── social-links.njk  # Shared social links partial
 │   ├── css/
 │   │   └── styles.css     # Global styles
 │   ├── js/                # Empty (no JS yet)
@@ -40,15 +42,19 @@ Stack: Eleventy 3.1.2, Nunjucks templates, CSS (no JS), ES Modules
 
 - **Language:** Nunjucks templates (`.njk`), CSS, ES Modules
 - **Style:** 2-space indentation, semantic HTML, CSS classes for styling
-- **Data:** Site config in `src/_data/site.json` (site title, description, social links)
-- **Layouts:** All pages extend `src/_includes/layouts/base.njk`
+- **CSS:** Custom properties (`:root` variables) for all colors — add new colors as variables, never hardcode
+- **Partials:** Reusable blocks (e.g. social links) live in `src/_includes/partials/` and are included via `{% include %}`
+- **Data:** Site config in `src/_data/site.json` (site title, description, social links) — flat keys, no nesting
+- **Layouts:** All pages extend `src/_includes/layouts/base.njk` via frontmatter `layout: layouts/base.njk`
 - **Permalinks:** Set in frontmatter (`permalink: /` and `permalink: /resume/`)
+- **Frontmatter:** Keep YAML keys unindented (no leading spaces)
 
 ## WHERE TO LOOK
 
 - **Source:** `src/`
 - **Config:** `.eleventy.js`, `src/_data/site.json`
 - **Layouts:** `src/_includes/layouts/`
+- **Partials:** `src/_includes/partials/`
 - **Styles:** `src/css/styles.css`
 
 ## NOTES
@@ -56,4 +62,7 @@ Stack: Eleventy 3.1.2, Nunjucks templates, CSS (no JS), ES Modules
 - No JavaScript currently used
 - CSS is plain (no preprocessor)
 - Social links and site metadata centralized in `site.json`
-- Resume page contains education, work experience, skills, and languages
+- Social links rendered via shared partial — update in one place
+- `base.njk` uses `<div class="container">` (not `<main>`) since child pages define their own `<main>`
+- Resume page contains education (with inline projects), work experience, skills, languages, and personal projects
+- Resume includes internship availability notice (Jan–Jun 2027)
