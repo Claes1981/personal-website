@@ -62,7 +62,7 @@ describe('content — resume', () => {
     assert.match(resume, /<h4>Selected Work:<\/h4>/);
     assert.match(resume, /Rilton Cup/);
     assert.match(resume, /Jönköping Chess Festival/);
-    assert.match(resume, /Tepe-Sigeman/);
+    assert.match(resume, /Tepe Sigeman & Co/);
     assert.match(resume, /West Coast Chess Open/);
     assert.match(resume, /Damallsvenskan/);
   });
